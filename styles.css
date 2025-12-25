@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Great+Vibes&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, p {
+    padding: 0;
+    margin: 0;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+main {
+    color: white;
+    position: absolute;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, fr);
+    z-index: 1;
+    pointer-events: none;
+}
+
+header {
+    background: rgba(15, 15, 15, 0.95);
+    grid-column: 2 / span 5;
+    font-size: 40px;
+    padding: 32px;
+    margin-bottom: 350px;
+    border-radius: 5px;
+    margin-top: 32px;
+}
+
+section {
+    grid-column: 2 / 8;
+    padding: 32px;
+    background: rgba(15, 15, 15, 0.95);
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 320px;
+}
+
+section h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section p {
+    font-family: 'Delius', cursive;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.left {
+grid-column: 6 / 12;
+margin-right: 32px;
+}
+
+.light {
+    margin-left: 32px;
+}
